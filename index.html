@@ -1,55 +1,190 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Shuting Pang — Trustworthy AI for Healthcare, Medical Foundation Models, and Multimodal Learning.">
-<title>Shuting Pang - Homepage</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shuting Pang — medical foundation models, multimodal learning and interpretable AI. Research in MRI, clinical records and adolescent mental health.">
+  <meta name="theme-color" content="#153e52">
+  <title>Shuting Pang · Medical AI Research</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23153e52'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='34' fill='white'%3ESP%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css?v=9a9e80344921">
 </head>
 <body>
-<header class="site-header"><div class="nav-wrap">
-<a class="brand" href="#home">Homepage</a>
-<nav><a href="#research">Research</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#awards">Awards</a><a href="#education">Education</a></nav>
-</div></header>
-<main class="page">
-<section id="home" class="hero section">
-<div class="portrait-wrap"><img class="portrait" src="assets/profile.jpeg" alt="Portrait of Shuting Pang"></div>
-<div class="intro">
-<h1>Shuting Pang</h1>
-<div class="affiliation">University of Electronic Science and Technology of China (UESTC)</div>
-<p>Hi, I’m <strong>Shuting Pang</strong>. I am a Master’s student in Computer Science and Technology at the University of Electronic Science and Technology of China (UESTC), supervised by Prof. Xiaoshuang Shi. I received my Bachelor’s degree in Computer Science and Technology from Sichuan University (SCU).</p>
-<p>My research focuses on <strong>trustworthy AI for healthcare</strong>, particularly <strong>medical foundation models</strong> and <strong>multimodal learning</strong>. I am interested in developing AI systems that can generalize across real-world healthcare settings and provide reliable and interpretable predictions.</p>
-<p class="contact"><a href="mailto:pangshuting123@gmail.com">Email</a><span>·</span><a href="assets/Shuting_Pang_CV.docx">CV</a></p>
-</div></section>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="#home" aria-label="Shuting Pang, home">Shuting Pang<span class="brand-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Background</a>
+      <a href="#beyond-research">Beyond research</a>
+    </nav>
+  </div>
+</header>
+<main class="page" id="main">
+  <section id="home" class="hero section" aria-labelledby="intro-title">
+    <div class="intro">
+      <p class="eyebrow">Medical AI · Interpretable learning</p>
+      <h1 id="intro-title">Shuting Pang <span lang="zh">庞舒婷</span></h1>
+      <p class="affiliation">M.Sc. student · Computer Science · UESTC</p>
+      <p class="bio">I study <strong>medical foundation models</strong> and <strong>interpretable multimodal learning</strong>, connecting medical images, clinical records and mental-health video.</p>
+      <p class="intro-detail">Advised by Prof. Xiaoshuang Shi at UESTC.<br>B.Sc. in Computer Science, Sichuan University.</p>
+      <div class="contact" aria-label="Contact and profiles">
+        <a class="primary-link" href="mailto:pangshuting123@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        <a href="assets/Shuting_Pang_CV.pdf" target="_blank" rel="noopener">CV <span class="link-detail">EN</span></a>
+        <a href="assets/Shuting_Pang_CV_CN.pdf" target="_blank" rel="noopener" lang="zh">中文简历</a>
+        <a href="https://scholar.google.com/citations?user=W_ELyxAAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="portrait-wrap"><img class="portrait" src="assets/profile.webp" width="176" height="216" alt="Portrait of Shuting Pang" fetchpriority="high"></div>
+  </section>
 
-<section id="research" class="section"><h2>🤖 Research</h2>
-<div class="research-card"><h3>Cross-Age and Cross-Setting Visual Foundation Models for Mental Health</h3><div class="meta">Sep. 2025 – Present · Supervised by Prof. Xiaoshuang Shi (UESTC), in collaboration with Prof. Wei Zhang (West China Hospital, SCU)</div></div>
-<div class="research-card"><h3>LLMs for Structured Clinical Data: Adaptation and Feature Interpretation</h3><div class="meta">Sep. 2024 – Jun. 2026 · Supervised by Prof. Xiaoshuang Shi (UESTC), in collaboration with Prof. Huan Song (West China Hospital, SCU)</div></div>
-<div class="research-card"><h3>Interpretable Representation Learning for Medical Imaging Diagnosis</h3><div class="meta">May 2023 – May 2025 · Co-supervised by Prof. Xiaoshuang Shi and Prof. Kang Li (West China-SenseTime Joint Laboratory, SCU)</div></div>
-</section>
+  <section id="research" class="section research" aria-labelledby="research-title">
+    <div class="section-heading"><h2 id="research-title">Selected research</h2><span class="section-note">Images · Records · Video</span></div>
+    <article class="project" aria-labelledby="mri-title">
+      <a class="project-figure mri-figure" href="assets/projects/mri-attention.png" data-figure data-title="R1: Interpretable MRI Classification" data-caption="Original attention-map comparison from the MRI study. HA: hierarchical attention; CSL: consistency learning; (L): enlarged region." aria-label="Enlarge the MRI attention visualization">
+        <img src="assets/projects/mri-attention-preview.webp" width="1972" height="990" alt="MRI attention maps comparing ResNet18, HA and HA-CSL across 3D and 2D branches, with enlarged regions." loading="lazy" decoding="async">
+        <span class="figure-hint" aria-hidden="true">View figure ↗</span>
+      </a>
+      <div class="project-content">
+        <p class="project-kicker">01 / Medical imaging</p>
+        <h3 id="mri-title">Interpretable medical image learning</h3>
+        <p class="project-dates">May 2023 – May 2025</p>
+        <p class="role-note">Led HA-CSL · First author</p>
+        <ol class="research-work">
+          <li><h4>HA-CSL <span class="work-status">Pattern Recognition · 2025</span></h4>
+            <p>Hierarchical attention and 2D–3D consistency learning for interpretable MRI classification.</p>
+            <div class="work-links"><a href="https://www.sciencedirect.com/science/article/pii/S0031320325001992" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/shuting-pang/HA_CSL" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+          </li>
+          <li><h4>Topology for image classification <span class="work-status">Unpublished exploration</span></h4>
+            <p>Persistent homology features for image classification.</p>
+            <div class="work-links"><a href="https://github.com/shuting-pang/topo-image-classification" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="https://github.com/shuting-pang/TDA-tutorial" target="_blank" rel="noopener noreferrer">TDA tutorial ↗</a></div>
+          </li>
+          <li><h4>LCA-DB <span class="work-status">Information Fusion · 2025 · Co-author</span></h4>
+            <p>I proposed the attention-consistency loss used to align image and patch representations.</p>
+            <div class="work-links"><a href="https://www.sciencedirect.com/science/article/pii/S1566253524004913" target="_blank" rel="noopener noreferrer">Paper ↗</a></div>
+          </li>
+        </ol>
+      </div>
+    </article>
 
-<section id="news" class="section"><h2>🔥 News</h2><ul class="news-list">
-<li><span class="date">2026.05</span> One first-author paper has been accepted by <em>Pattern Recognition</em>.</li>
-<li><span class="date">2025.03</span> One first-author paper has been accepted by <em>Pattern Recognition</em>.</li>
-<li><span class="date">2024.09</span> One paper has been accepted by <em>Information Fusion</em>.</li>
-</ul></section>
+    <article class="project" aria-labelledby="ehr-title">
+      <a class="project-figure" href="assets/projects/ehr-pipeline.png" data-figure data-title="Automated EHR-to-tabular pipeline" data-caption="Slide 8 overview: time-series statistics, automatic field typing, text embeddings and report keywords. The pipeline illustration is schematic." aria-label="Enlarge the EHR pipeline from slide 8">
+        <img src="assets/projects/ehr-pipeline-preview.webp" width="1672" height="941" alt="EHR pipeline: time-series statistics, numeric and categorical fields, text embeddings and keywords feed feature selection and an LLM prediction model." loading="lazy" decoding="async">
+        <span class="figure-hint" aria-hidden="true">View framework ↗</span>
+      </a>
+      <div class="project-content">
+        <p class="project-kicker">02 / Clinical records</p>
+        <h3 id="ehr-title">EHR learning and perioperative prediction</h3>
+        <p class="project-dates">Sep 2024 – Jun 2026</p>
+        <p class="role-note">Led FITEL · First author</p>
+        <ol class="research-work">
+          <li><h4>EHR AutoPipeline <span class="work-status">Code coming soon</span></h4>
+            <p>Automated time-series statistics, field typing, report keywords and text embeddings.</p>
+            <div class="work-links"><a href="https://github.com/shuting-pang/EHR-AutoPipeline" target="_blank" rel="noopener noreferrer">Repository ↗</a></div>
+          </li>
+          <li><h4>FITEL <span class="work-status">Pattern Recognition · 2026</span></h4>
+            <p>Learnable feature embeddings and dynamic sparse graphs adapt LLMs to clinical tables.</p>
+            <div class="work-links"><a href="https://www.sciencedirect.com/science/article/pii/S0031320326011027" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/shuting-pang/FITEL" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+          </li>
+          <li><h4>BioTemFormer <span class="work-status">Third author · Under review</span></h4>
+            <p>Temporal signals and clinical records for prediction; I contributed public-data experiments and manuscript writing.</p>
+          </li>
+        </ol>
+      </div>
+    </article>
 
-<section id="publications" class="section"><h2>📚 Selected Publications</h2><p class="note">(* equal contribution)</p><ol class="pub-list">
-<li><strong>S. Pang*</strong>, Y. Dong*, et al. “Feature-interpretable disease prediction from tabular data via dynamic GCN and LLMs.” <em>Pattern Recognition</em>, 2026.</li>
-<li><strong>S. Pang*</strong>, Y. Chen*, et al. “Interpretable 2.5D network by hierarchical attention and consistency learning for 3D MRI classification.” <em>Pattern Recognition</em>, 2025.</li>
-<li>R. Wang, X. Shi, <strong>S. Pang</strong>, et al. “Cross-attention guided loss-based deep dual-branch fusion network for liver tumor classification.” <em>Information Fusion</em>, 2025.</li>
-</ol></section>
+    <article class="project" aria-labelledby="mental-title">
+      <a class="project-figure depression-figure" href="assets/projects/depression-framework.png" data-figure data-title="Adolescent depression: Cross-age and cross-setting learning" data-caption="Latest framework: labeled clinical and unlabeled school videos, hierarchical attention, self-training and domain adaptation. Portraits and attention weights are schematic." aria-label="Enlarge the adolescent depression framework">
+        <img src="assets/projects/depression-framework-preview.webp" width="2174" height="1134" alt="Depression framework joining labeled adult and adolescent clinical videos with unlabeled school videos through a shared encoder, hierarchical attention and semi-supervised domain adaptation." loading="lazy" decoding="async">
+        <span class="figure-hint" aria-hidden="true">View framework ↗</span>
+      </a>
+      <div class="project-content">
+        <p class="project-kicker">03 / Mental health</p>
+        <h3 id="mental-title">Adolescent mental health across data modalities</h3>
+        <p class="project-dates">Sep 2025 – Present</p>
+        <p class="role-note">Led model development</p>
+        <ol class="research-work">
+          <li><h4>Questionnaire-based screening</h4>
+            <p>TabPFN-based self-injury screening from ~80K questionnaire records.</p>
+            <div class="work-links"><a href="https://github.com/shuting-pang/finetune_tabpfnv2_80krowdata" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+          </li>
+          <li><h4>Audio–video fusion</h4>
+            <p>Transcript filtering and missingness-aware fusion; <strong>84.10% AUROC</strong> in clinical five-fold CV.</p>
+            <div class="work-links"><a href="https://github.com/shuting-pang/audio-visual-fusion" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+          </li>
+          <li><h4>Video foundation models <span class="work-status">Manuscript in preparation</span></h4>
+            <p>Semi-supervised clinical-to-school video transfer with patch, frame and question attention.</p>
+          </li>
+        </ol>
+      </div>
+    </article>
+  </section>
 
-<section id="awards" class="section"><h2>🏆 Honors and Awards</h2><ul>
-<li>National Scholarship (Top 1%)</li><li>Tencent Scholarship</li><li>Outstanding Graduate of Sichuan Province</li><li>Sichuan Province Comprehensive Quality A-level Certification</li><li>OPPO “Duty” Scholarship</li>
-</ul></section>
+  <section id="publications" class="section" aria-labelledby="publications-title">
+    <div class="section-heading"><h2 id="publications-title">Selected publications</h2><span class="section-note">2025–2026</span></div>
+    <ol class="pub-list">
+      <li><span class="pub-year">2026</span><div><h3><a href="https://www.sciencedirect.com/science/article/pii/S0031320326011027" target="_blank" rel="noopener noreferrer">Feature-interpretable disease prediction from tabular data via dynamic GCN and LLMs</a></h3><p><strong>S. Pang</strong>, Y. Dong, et al. <span class="pub-venue">Pattern Recognition</span><span class="pub-role">First author</span></p></div></li>
+      <li><span class="pub-year">2025</span><div><h3><a href="https://www.sciencedirect.com/science/article/pii/S0031320325001992" target="_blank" rel="noopener noreferrer">Interpretable 2.5D network by hierarchical attention and consistency learning for 3D MRI classification</a></h3><p><strong>S. Pang</strong>, Y. Chen, et al. <span class="pub-venue">Pattern Recognition</span><span class="pub-role">First author</span></p></div></li>
+      <li><span class="pub-year">2025</span><div><h3><a href="https://www.sciencedirect.com/science/article/pii/S1566253524004913" target="_blank" rel="noopener noreferrer">Cross-attention guided loss-based deep dual-branch fusion network for liver tumor classification</a></h3><p>R. Wang, X. Shi, <strong>S. Pang</strong>, et al. <span class="pub-venue">Information Fusion</span></p></div></li>
+    </ol>
+  </section>
 
-<section id="education" class="section"><h2>👩‍🎓 Education</h2><ul class="education-list">
-<li><strong>University of Electronic Science and Technology of China (UESTC)</strong><br>Master of Computer Science and Technology · Sep. 2024 – Present<br>GPA: 3.95/4.0</li>
-<li><strong>Sichuan University (SCU)</strong><br>Bachelor of Computer Science and Technology · Sep. 2020 – Jun. 2024<br>GPA: 3.84/4.0</li>
-</ul></section>
-<footer><p>© 2026 Shuting Pang · Last updated August 2026</p></footer>
+
+  <section id="education" class="section background-section" aria-labelledby="background-title">
+    <div class="section-heading"><h2 id="background-title">Background</h2></div>
+    <div class="background-grid">
+      <div><h3 class="small-heading">Education</h3><ul class="education-list">
+        <li><strong>University of Electronic Science and Technology of China</strong><span>M.Sc. · Computer Science · 2024–Present</span><span class="muted">GPA 3.95 / 4.0</span></li>
+        <li><strong>Sichuan University</strong><span>B.Sc. · Computer Science · 2020–2024</span><span class="muted">GPA 3.84 / 4.0</span></li>
+      </ul></div>
+      <div><h3 class="small-heading">Selected honors</h3><ul class="honors-list">
+        <li><strong>National Scholarship</strong><span>Top 1% · 2021</span></li>
+        <li><strong>OPPO Scholarship</strong><span>Top 3% · 2025</span></li>
+        <li><strong>Tencent Scholarship</strong><span>2022</span></li>
+        <li class="institutional-honor"><strong>SCU First-class Scholarship</strong><span>2021–2023</span></li>
+        <li><strong>UESTC First-class Scholarship</strong><span>2025–2026</span></li>
+      </ul></div>
+    </div>
+  </section>
+  <section id="beyond-research" class="section travel-section" aria-labelledby="travel-title">
+    <div class="section-heading"><h2 id="travel-title">Beyond research</h2></div>
+    <p class="travel-intro">I love traveling for the beautiful views and cherish the happy memories each journey brings.</p>
+    <div class="travel-gallery" aria-label="Travel photo gallery">
+      <a class="travel-photo travel-mountain" href="assets/travel/mountain.jpg" data-figure data-title="Mountain light" data-caption="" aria-label="View photo: Mountain light">
+        <img src="assets/travel/mountain-1200.webp" srcset="assets/travel/mountain-640.webp 640w, assets/travel/mountain-1200.webp 1200w" sizes="(max-width: 680px) calc(100vw - 36px), 580px" width="2200" height="1650" alt="A snow-covered mountain rising above clouds beneath a blue sky." loading="lazy" decoding="async">
+        <span class="travel-zoom" aria-hidden="true">↗</span>
+      </a>
+      <a class="travel-photo travel-snow" href="assets/travel/snow-road.jpg" data-figure data-title="A road through snow" data-caption="" aria-label="View photo: A road through snow">
+        <img src="assets/travel/snow-road-1200.webp" srcset="assets/travel/snow-road-640.webp 640w, assets/travel/snow-road-1200.webp 1200w" sizes="(max-width: 680px) calc((100vw - 48px) / 2), 290px" width="1350" height="1800" alt="A dark road and footprints crossing a snowy landscape beneath a cloudy sky." loading="lazy" decoding="async">
+        <span class="travel-zoom" aria-hidden="true">↗</span>
+      </a>
+      <a class="travel-photo travel-deer" href="assets/travel/hillside.jpg" data-figure data-title="A quiet hillside" data-caption="" aria-label="View photo: A quiet hillside">
+        <img src="assets/travel/hillside-1200.webp" srcset="assets/travel/hillside-640.webp 640w, assets/travel/hillside-1200.webp 1200w" sizes="(max-width: 680px) calc((100vw - 48px) / 2), 290px" width="1800" height="1350" alt="Two deer grazing beside stone steps on a sunlit green hillside." loading="lazy" decoding="async">
+        <span class="travel-zoom" aria-hidden="true">↗</span>
+      </a>
+      <a class="travel-photo travel-water" href="assets/travel/blue-water.jpg" data-figure data-title="By the blue water" data-caption="" aria-label="View photo: By the blue water">
+        <img src="assets/travel/blue-water-1200.webp" srcset="assets/travel/blue-water-640.webp 640w, assets/travel/blue-water-1200.webp 1200w" sizes="(max-width: 680px) calc((100vw - 48px) / 2), 290px" width="1800" height="1350" alt="Sheep on a sandy shore beside turquoise water under clouds." loading="lazy" decoding="async">
+        <span class="travel-zoom" aria-hidden="true">↗</span>
+      </a>
+      <a class="travel-photo travel-road" href="assets/travel/winding-road.jpg" data-figure data-title="Winding roads" data-caption="" aria-label="View photo: Winding roads">
+        <img src="assets/travel/winding-road-1200.webp" srcset="assets/travel/winding-road-640.webp 640w, assets/travel/winding-road-1200.webp 1200w" sizes="(max-width: 680px) calc((100vw - 48px) / 2), 580px" width="1800" height="1350" alt="A winding road curving through broad brown mountain slopes." loading="lazy" decoding="async">
+        <span class="travel-zoom" aria-hidden="true">↗</span>
+      </a>
+      <a class="travel-photo travel-sunset" href="assets/travel/sunset.jpg" data-figure data-title="The last light" data-caption="" aria-label="View photo: The last light">
+        <img src="assets/travel/sunset-1200.webp" srcset="assets/travel/sunset-640.webp 640w, assets/travel/sunset-1200.webp 1200w" sizes="(max-width: 680px) calc((100vw - 48px) / 2), 580px" width="1800" height="1350" alt="Golden sunset clouds above a lake, with mountain and tree silhouettes." loading="lazy" decoding="async">
+        <span class="travel-zoom" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+  <footer><p>© 2026 Shuting Pang</p><p>Updated November 2026</p></footer>
 </main>
-<script src="script.js"></script>
-</body></html>
+<dialog class="figure-dialog" id="figure-dialog" aria-labelledby="figure-title" aria-describedby="figure-caption">
+  <div class="dialog-header"><h2 id="figure-title"></h2><button class="close-dialog" type="button" aria-label="Close figure">Close <span aria-hidden="true">×</span></button></div>
+  <div class="dialog-image-wrap"><img id="figure-image" alt=""></div>
+  <div class="dialog-footer"><p id="figure-caption"></p><a id="figure-original" href="assets/projects/mri-attention.png" target="_blank" rel="noopener">Open full-size image ↗</a></div>
+</dialog>
+<script src="script.js?v=b237f5834f01"></script>
+</body>
+</html>
