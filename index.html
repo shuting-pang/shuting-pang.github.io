@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#153e52">
   <title>Shuting Pang · Medical AI Research</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23153e52'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='34' fill='white'%3ESP%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=9a9e80344921">
+  <link rel="stylesheet" href="style.css?v=biotemformer-shap-20261109">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -90,10 +90,33 @@
             <div class="work-links"><a href="https://www.sciencedirect.com/science/article/pii/S0031320326011027" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/shuting-pang/FITEL" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
           </li>
           <li><h4>BioTemFormer <span class="work-status">Third author · Under review</span></h4>
-            <p>Temporal signals and clinical records for prediction; I contributed public-data experiments and manuscript writing.</p>
+            <p>Clinical records and intraoperative signals for postoperative prediction. I validated the model on the public INSPIRE dataset and created global and case-level SHAP visualizations.</p>
           </li>
         </ol>
       </div>
+    
+      <details class="project-more shap-details" id="biotemformer-shap">
+        <summary>BioTemFormer: view SHAP visualizations</summary>
+        <div class="more-content">
+          <p>Feature attributions for postoperative cognitive impairment predictions in the clinical cohort. My public-data validation used INSPIRE for the separate in-hospital mortality prediction task.</p>
+          <div class="shap-figures">
+            <figure>
+              <a class="shap-image" href="assets/projects/biotemformer-shap-global.webp" data-figure data-title="BioTemFormer: global SHAP analysis" data-caption="Top 20 features contributing to BioTemFormer model outputs for postoperative cognitive impairment prediction. Color indicates feature value. Figure 3 from the manuscript." aria-label="Enlarge the global SHAP feature attribution plot">
+                <img src="assets/projects/biotemformer-shap-global.webp" width="860" height="970" alt="Global SHAP beeswarm plot of the top 20 features contributing to BioTemFormer predictions, including cognitive function, depression and sleep scores." loading="lazy" decoding="async">
+                <span class="figure-hint" aria-hidden="true">Enlarge figure ↗</span>
+              </a>
+              <figcaption><strong>Global feature attributions</strong>Top 20 features and their contributions to model outputs.</figcaption>
+            </figure>
+            <figure>
+              <a class="shap-image" href="assets/projects/biotemformer-shap-local.webp" data-figure data-title="BioTemFormer: case-level SHAP analysis" data-caption="SHAP force plots for two representative cases in the cognitive impairment prediction task. Pink and blue contributions increase or decrease the model output relative to its base value. Displayed feature values use RobustScaler standardization. Figure 4 from the manuscript." aria-label="Enlarge the case-level SHAP force plots">
+                <img src="assets/projects/biotemformer-shap-local.webp" width="2355" height="759" alt="SHAP force plots for two representative cases showing feature contributions that increase or decrease the BioTemFormer model output." loading="lazy" decoding="async">
+                <span class="figure-hint" aria-hidden="true">Enlarge figure ↗</span>
+              </a>
+              <figcaption><strong>Case-level explanations</strong>Two representative cases. Feature values use RobustScaler standardization.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </details>
     </article>
 
     <article class="project" aria-labelledby="mental-title">
@@ -105,7 +128,7 @@
         <p class="project-kicker">03 / Mental health</p>
         <h3 id="mental-title">Adolescent mental health across data modalities</h3>
         <p class="project-dates">Sep 2025 – Present</p>
-        <p class="role-note">Led model development</p>
+        <p class="role-note">Led VLM4MH · First author</p>
         <ol class="research-work">
           <li><h4>Questionnaire-based screening</h4>
             <p>TabPFN-based self-injury screening from ~80K questionnaire records.</p>
@@ -115,7 +138,7 @@
             <p>Transcript filtering and missingness-aware fusion; <strong>84.10% AUROC</strong> in clinical five-fold CV.</p>
             <div class="work-links"><a href="https://github.com/shuting-pang/audio-visual-fusion" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
           </li>
-          <li><h4>Video foundation models <span class="work-status">Manuscript in preparation</span></h4>
+          <li><h4>Video foundation models <span class="work-status">First author · Under review</span></h4>
             <p>Semi-supervised clinical-to-school video transfer with patch, frame and question attention.</p>
             <p><strong>Patent:</strong> <span lang="zh">一种跨域半监督的精神健康风险评估方法</span></p>
           </li>
